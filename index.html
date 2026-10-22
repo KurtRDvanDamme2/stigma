@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woordenwolk: Synoniemen & Verwante Termen van Stigma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hih: {
+                            green: '#1E5939',
+                            orange: '#E35220',
+                            sand: '#F5F2EB',
+                            dark: '#2C3531',
+                            gray: '#555F5A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cloud-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.1rem 1.8rem;
+            padding: 3.5rem 2.5rem;
+            background-color: #F5F2EB;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+        }
+        .cloud-word {
+            line-height: 1.1;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-shadow 0.3s ease;
+            cursor: default;
+            user-select: none;
+        }
+        .cloud-word:hover {
+            transform: scale(1.18) rotate(-1.5deg);
+            text-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 bg-white antialiased">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-8">
+            <span class="inline-block bg-hih-orange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-2">Begripsverheldering</span>
+            <h2 class="text-3xl font-black text-hih-dark mb-2 uppercase tracking-wider">Het Veld Rond "Stigma"</h2>
+            <p class="text-hih-gray text-sm max-w-2xl mx-auto">Van letterlijke vertalingen en historische herkomst tot hedendaagse sociologische en psychologische equivalenten.</p>
+        </div>
+
+        <div class="cloud-container">
+            <!-- Primaire / letterlijke synoniemen (Grootste weging) -->
+            <span class="cloud-word text-7xl font-black text-hih-orange">Brandmerk</span>
+            <span class="cloud-word text-6xl font-black text-hih-dark">Vooroordeel</span>
+            <span class="cloud-word text-6xl font-extrabold text-hih-green">Schandvlek</span>
+            <span class="cloud-word text-5xl font-black text-hih-orange">Taboe</span>
+            <span class="cloud-word text-6xl font-bold text-hih-gray">Etiket</span>
+
+            <!-- Geassocieerde institutionele & relationele uitingen -->
+            <span class="cloud-word text-5xl font-bold text-hih-dark">Stempel</span>
+            <span class="cloud-word text-4xl font-black text-hih-green">Uitsluiting</span>
+            <span class="cloud-word text-4xl font-extrabold text-hih-orange">Discriminatie</span>
+            <span class="cloud-word text-4xl font-bold text-hih-gray">Stereotype</span>
+            <span class="cloud-word text-5xl font-extrabold text-hih-dark">Brandteken</span>
+
+            <!-- Psychosociale gevolgen & verinnerlijking -->
+            <span class="cloud-word text-3xl font-bold text-hih-green">Zelfstigma</span>
+            <span class="cloud-word text-4xl font-semibold text-hih-orange">Afwijzing</span>
+            <span class="cloud-word text-3xl font-black text-hih-dark">Marginalisering</span>
+            <span class="cloud-word text-3xl font-bold text-hih-gray">Schaamte</span>
+            <span class="cloud-word text-4xl font-extrabold text-hih-green">Smet</span>
+
+            <!-- Sociale dynamieken & metaforen -->
+            <span class="cloud-word text-3xl font-medium text-hih-dark">Veroordeling</span>
+            <span class="cloud-word text-2xl font-bold text-hih-orange">Blaam</span>
+            <span class="cloud-word text-3xl font-bold text-hih-green">Hokjesdenken</span>
+            <span class="cloud-word text-2xl font-semibold text-hih-gray">Zondebok</span>
+            <span class="cloud-word text-2xl font-black text-hih-dark">Miskenning</span>
+            <span class="cloud-word text-3xl font-medium text-hih-orange">Verstoting</span>
+            <span class="cloud-word text-2xl font-bold text-hih-green">Schande</span>
+            <span class="cloud-word text-xl font-semibold text-hih-gray">Afkeuring</span>
+            <span class="cloud-word text-2xl font-extrabold text-hih-dark">Sociale Dood</span>
+            <span class="cloud-word text-xl font-bold text-hih-orange">Zwart Schaap</span>
+        </div>
+    </div>
+</body>
+</html>
